@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $("a").click(function( event ) {
+          alert( "Whoah, this is an event handler!!!" );
+         event.preventDefault();
+        });
+        $( "#fadeThisOut" ).click(function( event ) {
+            $( this ).hide( "slow" );
+        });
+    });
+</script>
+</head>
+<body>
+    <a href="http://jquery.com/">This is a link</a>
+    <span id="fadeThisOut">This is some text that will fade out</span>
+    </script>
+</body>
+</html>
